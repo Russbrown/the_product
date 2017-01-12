@@ -1,0 +1,34 @@
+.blog-index {
+
+    .post {
+        position: relative;
+        border-bottom: 3px solid $accent;
+    }
+
+    .entry-title {
+        position: absolute;
+        bottom: 2rem;
+        background: #333;
+        padding: .5rem 1rem .5rem 2rem;
+    }
+
+    .entry-title a {
+        text-decoration: none;
+        color: #d4d4d4;
+    }
+
+    .entry-image {
+        width: 100%;
+        display: block;
+    }
+
+    .entry-company {
+        position: absolute;
+        bottom: 2.6rem;
+        right: 0em;
+        padding: .5rem 2rem .5rem 1rem;
+        background: #333;
+        color: #d4d4d4;
+        text-transform: uppercase;
+    }
+}
