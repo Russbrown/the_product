@@ -5,12 +5,12 @@ html {
 
 body {
 	background: #fff;
-	font: 14px/21px $font;
+	font: 14px/21px $text-font;
 	color: $text-color;
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
     margin: 0 auto;
-    font-family: 'Futura LT W01 Book';
+    font-family: $text-font;
 }
 
 // Links
