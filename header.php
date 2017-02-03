@@ -17,6 +17,7 @@
 
 	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/cfae0c92-589d-4e1b-be77-2648fb5b204a.css"/>
 
 	<?php wp_head(); ?>
 </head>
