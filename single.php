@@ -12,16 +12,26 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-			<?php the_post_navigation(); ?>
+				<?php $image = get_field("title_image"); ?>
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+				<img src="<?= $image['url'] ?>" class="entry-image"/>
+
+				<div class="article-wrapper">
+
+					<header class="entry-header cf">
+						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+						<div class="entry-company"> <?= the_field("company") ?> </div>
+					</header><!-- .entry-header -->
+
+					<div class="entry-content">
+						<?php the_content(); ?>
+					</div><!-- .entry-content -->
+
+				</div>
+
+			</article><!-- #post-## -->
 
 		<?php endwhile; // End of the loop. ?>
 

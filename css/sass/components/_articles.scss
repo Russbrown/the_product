@@ -10,11 +10,11 @@
         bottom: 2rem;
         background: #333;
         padding: .5rem 1rem .5rem 2rem;
-    }
-
-    .entry-title a {
         text-decoration: none;
         color: #d4d4d4;
+        font-family: $header-font;
+        margin-bottom: 0;
+        max-width: 50%;
     }
 
     .entry-image {
@@ -24,11 +24,77 @@
 
     .entry-company {
         position: absolute;
-        bottom: 2.6rem;
+        bottom: 2rem;
         right: 0em;
         padding: .5rem 2rem .5rem 1rem;
         background: #333;
         color: #d4d4d4;
         text-transform: uppercase;
     }
+}
+
+.blog-single {
+
+    .post {
+        position: relative;
+        border-bottom: 3px solid $accent;
+    }
+
+    .entry-image {
+        width: 100%;
+        display: block;
+    }
+
+    .article-wrapper {
+        width: 85%;
+        position: relative;
+        top: -100px;
+        background: #fff;
+        margin: 0 auto;
+    }
+
+    .entry-header {
+        background: #1b1c1d;
+    }
+
+    .entry-title {
+        font-family: $header-font;
+        font-size: 1.4em;
+        color: #fff;
+        padding-left: 1rem;
+        width: 70%;
+        float: left;
+        line-height: 50px;  
+    }
+
+    .entry-company {
+        font-family: $text-font;
+        font-size: 1em;
+        color: #fff;
+        padding-right: 1rem;
+        width: 30%;
+        float: right;   
+        line-height: 56px;  
+        text-align: right;   
+    }
+
+    .entry-content {
+        padding: 1rem;
+
+        img {
+            width: 100%;
+        }
+
+        blockquote {
+            border-top: 3px solid $accent;
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid $accent;
+            margin-bottom: 1rem;
+            font-size: 2em;
+            font-family: $header-font;
+            line-height: 1.2em;
+        }
+    }
+
 }
