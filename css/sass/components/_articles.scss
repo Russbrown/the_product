@@ -1,3 +1,5 @@
+
+
 .blog-index {
 
     .post {
@@ -53,11 +55,19 @@
     }
 
     .article-wrapper {
+        max-width: 1000px;
         width: 85%;
         position: relative;
         top: -100px;
         background: #fff;
         margin: 0 auto;
+    }
+
+    @media screen and (min-width: 768px) {
+        .article-wrapper {
+            font-size: 2em;
+            line-height: 1.4em;
+        }
     }
 
     .entry-header {
@@ -101,6 +111,12 @@
             font-size: 2em;
             font-family: $header-font;
             line-height: 1.2em;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .entry-content {
+            padding: 2em;
         }
     }
 
