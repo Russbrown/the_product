@@ -1,0 +1,19 @@
+.footer {
+
+    padding: 2rem;
+
+    .social-icons {
+        width: 200px;
+        margin: 0 auto;
+        a {
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+            width: 97px;
+            height: 50px;
+            font-size: 4rem;
+            color: $accent;
+            cursor: pointer;
+        }
+    }
+}
