@@ -68,6 +68,10 @@
             font-size: 2em;
             line-height: 1.4em;
         }
+        .entry-image {
+            height: 450px;
+            object-fit: cover;
+        }
     }
 
     .entry-header {
