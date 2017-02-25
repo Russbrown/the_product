@@ -121,3 +121,43 @@
     }
 
 }
+
+.twitter-share-button {
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    padding: 14px;
+    padding: 1rem;
+    color: #fff;
+    font-family: $header-font;
+    margin: 0 auto;
+    width: 185px;
+    display: block;
+    border: 3px solid #54f65c;
+    text-decoration: none;
+    text-align: center;
+    -webkit-user-select: none;
+
+    i {
+        padding-right: 5px;
+        font-size: 20px;
+        font-size: 1.45rem;
+        position: relative;
+        top: 2px;
+    }
+}
+
+.twitter-share-button:active {
+    box-shadow: 0 0 2px rgba(0,0,0,0.3);
+    border-radius: 10px;  
+}
+
+.twitter-share-button:focus {
+    background: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .twitter-share-button {
+        font-size: 14px;
+        font-size: 1rem;
+    }  
+}
