@@ -8,6 +8,12 @@
     padding-bottom: 4.66rem;
 }
 
+@media screen and (max-width: 767px) {
+    .next-posts__title {
+        padding-top: 2rem;
+    }
+}
+
 .next-post {
     width: 100%;
     display: block;

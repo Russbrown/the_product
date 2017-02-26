@@ -29,6 +29,12 @@ get_header(); ?>
 						<?php the_content(); ?>
 					</div><!-- .entry-content -->
 
+					<a class="twitter-share-button js-twitter-share"
+						href="https://twitter.com/intent/tweet?text=Smashing%20interview%20with%20<?php the_title()?>%20of%20<?= the_field("company") ?>%20here:%20<?php the_permalink()?>" 
+						data-size="large">
+						<i class="fa fa-twitter"></i>Tweet this article
+					</a>
+
 					<div class="next-posts cf">
 
 						<h2 class="next-posts__title">Suggested Interviews</h2>
@@ -80,12 +86,6 @@ get_header(); ?>
 					</div>
 
 				</div>
-
-				<!--<a class="twitter-share-button js-twitter-share"
-					href="https://twitter.com/intent/tweet?text=Smashing%20interview%20with%20<?php the_title()?>%20of%20<?= the_field("company") ?>%20here:%20<?php the_permalink()?>" 
-					data-size="large">
-					<i class="fa fa-twitter"></i>Tweet this article
-				</a>-->
 
 				<!-- Begin MailChimp Signup Form -->
 				<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
