@@ -29,13 +29,63 @@ get_header(); ?>
 						<?php the_content(); ?>
 					</div><!-- .entry-content -->
 
-					<a class="twitter-share-button js-twitter-share"
-  						href="https://twitter.com/intent/tweet?text=Smashing%20interview%20with%20<?php the_title()?>%20of%20<?= the_field("company") ?>%20here:%20<?php the_permalink()?>" 
-  						data-size="large">
-						<i class="fa fa-twitter"></i>Tweet this article
-					</a>
+					<div class="next-posts cf">
+
+						<h2 class="next-posts__title">Suggested Interviews</h2>
+
+						<?php 
+						// get next post
+						$next_post = get_next_post();
+						if ($next_post->ID != '') {
+							$next_url = get_permalink($next_post->ID);
+							$next_company = get_field('company', $next_post->ID);
+							$next_image = get_field('title_image', $next_post->ID);
+							?>
+							<a href="<?= $next_url ?>" class="next-post cf">
+								<div class="next-post__image-wrap">
+									<img class="next-post__image" src="<?= $next_image['url'] ?>"/>
+								</div> 
+								<div class="next-post__title"><?= $next_post->post_title ?></div>
+								<br>
+								<div class="next-post__company"><?= $next_company ?></div>
+							</a>
+							<?php
+						} else {
+							// do nowt
+						}
+						?>
+
+						<?php
+						// get prev post
+						$prev_post = get_previous_post();
+						if ($prev_post->ID != '') {
+							$prev_url = get_permalink($prev_post->ID);
+							$prev_company = get_field('company', $prev_post->ID);
+							$prev_image = get_field('title_image', $prev_post->ID);
+							?>
+							<a href="<?= $prev_url ?>" class="next-post cf">
+								<div class="next-post__image-wrap">
+									<img class="next-post__image" src="<?= $prev_image['url'] ?>"/>
+								</div>
+								<div class="next-post__title"><?= $prev_post->post_title ?></div>
+								<br>
+								<div class="next-post__company"><?= $prev_company ?></div>
+							</a>
+							<?php
+						} else {
+							// do nowt
+						}
+						?>
+
+					</div>
 
 				</div>
+
+				<!--<a class="twitter-share-button js-twitter-share"
+					href="https://twitter.com/intent/tweet?text=Smashing%20interview%20with%20<?php the_title()?>%20of%20<?= the_field("company") ?>%20here:%20<?php the_permalink()?>" 
+					data-size="large">
+					<i class="fa fa-twitter"></i>Tweet this article
+				</a>-->
 
 				<!-- Begin MailChimp Signup Form -->
 				<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
