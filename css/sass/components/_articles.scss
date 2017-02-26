@@ -151,6 +151,10 @@
     }
 }
 
+.twitter-share-button:hover {
+   box-shadow: 0 0 2px rgba(0,0,0,0.1); 
+}
+
 .twitter-share-button:active {
     box-shadow: 0 0 2px rgba(0,0,0,0.3);
     border-radius: 10px;  
