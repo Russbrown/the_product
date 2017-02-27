@@ -30,8 +30,8 @@ get_header(); ?>
 					</div><!-- .entry-content -->
 
 					<a class="twitter-share-button js-twitter-share"
-						href="https://twitter.com/intent/tweet?text=Smashing%20interview%20with%20<?php the_title()?>%20of%20<?= the_field("company") ?>%20here:%20<?php the_permalink()?>" 
-						data-size="large">
+						href="https://twitter.com/intent/tweet?text=Check%20out%20this%20interview%20with%20<?php the_title()?>%20of%20<?= the_field("company") ?>%20here:%20<?php the_permalink()?>%20via@the__product" 
+						data-size="large" target="_blank">
 						<i class="fa fa-twitter"></i>Tweet this article
 					</a>
 
