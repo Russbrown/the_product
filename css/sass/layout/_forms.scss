@@ -1,24 +1,12 @@
 // forms
 
-	form {
-		margin-bottom: 20px; 
-	}
-	fieldset {
-		margin-bottom: 20px; 
-	}
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
 	textarea,
 	select {
-		padding: 6px 4px;
 		outline: none;
-		font-family: $font;
-		color: #777;
-		margin: 0;
-		max-width: 100%;
 		display: block;
-		margin-bottom: 20px;
 		background: #fff; 
 	}
 	select {

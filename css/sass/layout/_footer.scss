@@ -3,17 +3,32 @@
     padding: 2rem;
 
     .social-icons {
-        width: 200px;
+        width: 213px;
         margin: 0 auto;
         a {
             display: inline-block;
             text-decoration: none;
             text-align: center;
-            width: 97px;
             height: 50px;
-            font-size: 4rem;
-            color: $accent;
+            width: 50px;
+            font-size: 3em;
+            color: #333;
+            transition: color .25s;
             cursor: pointer;
+        }
+        a:hover {
+            color: $accent;
+            transition: color .25s;
+        }
+    }
+
+    @media screen and (min-width: 450px) {
+        .social-icons {
+            width: 401px;
+            a {
+                width: 97px;
+                font-size: 4rem;
+            }
         }
     }
 }

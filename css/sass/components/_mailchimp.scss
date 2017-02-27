@@ -1,22 +1,38 @@
-#mc_embed_signup {
-    background: $accent;
-    padding: 3rem;
+.signup-form {
+    border-top: 4px solid #333;
+    padding: 2rem;
+    background: #333;
 }
 
-#mc_embed_signup .button {
-    background: #fff!important;
+.signup-label {
     font-family: $header-font;
-    color: #333 !important;
-    -webkit-appearance: none;
-    -webkit-border-radius: 0;
+    text-align: center;
+    color: #fff;
 }
 
-#mc_embed_signup .button:hover {
-    background: #333!important;
-    color: #fff!important;
+.signup-input {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+    padding: 14px;
+    padding: 1rem;
+    border: none;
+    border-radius: 3px;
 }
 
-#mc_embed_signup input.email {
-    font-family: $text-font !important;
-    border: 0!important;
+.signup-button {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+    font-family: $header-font;  
+    padding: 14px;
+    padding: 1rem; 
+    background: $accent;
+    border: none;
+    margin-top: 7px;
+    margin-top: .5rem;
+    cursor: pointer;
 }
+
