@@ -15,7 +15,6 @@
       <div class="social-icons">
         <a href="https://twitter.com/the__product" class="fa fa-twitter"></a>
         <a href="https://www.instagram.com/the__product/" class="fa fa-instagram"></a>
-        <a href="https://www.facebook.com/theprdct/" class="fa fa-facebook"></a>
         <a href="https://www.linkedin.com/in/russell-brown-07740a21/" class="fa fa-linkedin"></a>
       </div>
 		</footer>
