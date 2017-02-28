@@ -112,7 +112,7 @@ add_action( 'widgets_init', 'browny_widgets_init' );
  * Enqueue scripts and styles.
  */
 function browny_scripts() {
-	wp_enqueue_style( 'browny-style', get_template_directory_uri() . '/css/main.css?v=1.1' );
+	wp_enqueue_style( 'browny-style', get_template_directory_uri() . '/css/main.css?v=1.2' );
 }
 add_action( 'wp_enqueue_scripts', 'browny_scripts' );
 
