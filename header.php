@@ -19,6 +19,16 @@
 	<!--<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">-->
 	<link rel="shortcut icon" href="myIcon.ico" type="image/x-icon" />
 
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@the__product">
+	<meta name="twitter:creator" content="@therusstler">
+	<meta name="twitter:title" content="The Product">
+	<meta name="twitter:description" content="Discover in-depth discussions with Founders, Designers & Engineers">
+	<?php if ( is_front_page() && is_home() ) : ?>
+	<meta name="twitter:image" content="http://theprdct.com/wp-content/uploads/2017/02/tumblr_n3awiyI8DN1rcsjseo1_1280-1.jpg">
+	<?php else : ?>
+	<?php endif; ?>
+
 	<?php wp_head(); ?>
 </head>
 
