@@ -21,6 +21,11 @@
 
 	</div><!-- #page -->
 
+  <div class="subscribe-msg">
+      <div class="subscribe-msg__btn js-subscribe-close">X</div>
+      Never miss an interview, <a href="http://eepurl.com/cANwOv" target="blank" class="subscribe-msg__link">subscribe</a>
+  </div>
+
 <?php wp_footer(); ?>
 
 <script
@@ -40,8 +45,6 @@
   ga('send', 'pageview');
 
 </script>
-
-<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us15.list-manage.com","uuid":"e7510dfc6336ee69f4cbdd4be","lid":"106483b035"}) })</script>
 
 </body>
 </html>
