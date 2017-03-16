@@ -1,5 +1,7 @@
 $( document ).ready(function() {
 	
+    ////// ANALYTICS //////
+
     $('.js-twitter-share').on('click', function(){
         ga('send', {
             hitType: 'event',
@@ -7,6 +9,8 @@ $( document ).ready(function() {
             eventAction: 'Twitter-share'
         });
     });
+
+    ////// SUBSCRIBER //////
 
     $('.js-subscribe-close').on("click", function(){
         showMessage();
@@ -30,5 +34,17 @@ $( document ).ready(function() {
             document.cookie = "Theprdct_subscribe=true; expires=" + CookieDate.toGMTString( ) + ";";
         }
     }
+
+    ////// NAV //////
+
+    $('.nav__btn').on("click", function(){
+        $('nav').toggleClass('nav--closed');
+        $('nav').toggleClass('nav--open');
+    });
+
+    $('.nav__display-toggle').on('click', function(){
+        $('nav').toggleClass('nav__display-name--active');
+        $('nav').toggleClass('nav__display-company--active');
+    });
 
 });

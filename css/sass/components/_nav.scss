@@ -1,0 +1,127 @@
+nav {
+    font-family: $header-font;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #333333;
+    box-shadow: 0 0 35px rgba(0,0,0,0.6);
+    z-index: 1;
+    width: 80%;
+    height: 100vh;
+
+    .nav__display-toggle {
+        color: #697479;
+        padding: 33px;
+        padding: 1.5rem;
+        font-size: 33px;
+        font-size: 1.5rem;
+    }
+
+    .nav__btn {
+        font-size: 33px;
+        font-size: 1.5rem;
+        position: absolute;
+        top: 37px;
+        left: -50px;
+        width: 50px;
+        height: 50px;
+        background: #333;
+        color: #d1dfe5;
+        font-family: $header-font;
+        font-size: 40px;
+        line-height: 38px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .nav__btn:hover {
+        color: #d1dfe5;
+        text-shadow: 0 0 35px rgba(0,0,0,1);
+        transition: color .5s, text-shadow .5s;
+        -webkit-transition: color .5s, box-shadow .5s;
+    }
+
+    ul {
+        margin-bottom: 0;
+    }
+
+    li {
+        border-top: 1px solid rgba(59,60,60,0.8);
+        margin-bottom: 0;
+        line-height: 1rem;
+    }
+
+    a {
+        text-decoration: none;
+        padding: 1rem 1.5rem;
+        color: #d1dfe5 !important;
+        display: block;
+        position: relative;
+    }
+}
+
+.nav__display-name--active {
+    .nav__display-name {
+        color: #d1dfe5;
+        transition: color .5s, text-shadow .5s;
+        -webkit-transition: color .5s, box-shadow .5s;
+        text-decoration: underline;
+    }
+
+    .name {
+        display: block;
+    }
+
+    .company {
+        display: none;
+    }
+}
+
+.nav__display-company--active {
+    .nav__display-company {
+        color: #d1dfe5;
+        transition: color .5s, text-shadow .5s;
+        -webkit-transition: color .5s, box-shadow .5s;
+        text-decoration: underline;
+    }
+
+    .name {
+        display: none;
+    }
+
+    .company {
+        display: block;
+    }
+}
+
+.nav--closed {
+    right: -80%;
+    transition: right .5s;
+    -webkit-transition: right .5s;
+}
+
+.nav--open {
+    right: 0;
+    transition: right .5s;
+    -webkit-transition: right .5s;
+}
+
+@media screen and (min-width: 500px) {
+    nav {
+        width: 50%;
+    }
+
+    .nav--closed {
+        right: -50%;
+    } 
+}
+
+@media screen and (min-width: 900px) {
+    nav {
+        width: 30%;
+    }
+
+    .nav--closed {
+        right: -30%;
+    } 
+}

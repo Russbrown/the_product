@@ -49,4 +49,15 @@
 		</div><!-- .site-branding -->
 	</header><!-- #masthead -->
 
+	<nav class="nav--closed nav__display-name--active">
+		<div class="nav__btn">></div>
+		<div class="nav__display-toggle">
+			<span class="nav__display-name">Name</span>
+			/
+			<span class="nav__display-company">Company</span>
+		</div>
+		<?php $walker = new Menu_With_Description; ?>
+		<?php wp_nav_menu(array('walker' => $walker)); ?>
+	</nav>
+
 	<div id="content" class="site-content">
