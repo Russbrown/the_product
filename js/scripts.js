@@ -42,9 +42,26 @@ $( document ).ready(function() {
         $('nav').toggleClass('nav--open');
     });
 
-    $('.nav__display-toggle').on('click', function(){
-        $('nav').toggleClass('nav__display-name--active');
-        $('nav').toggleClass('nav__display-company--active');
+    $('.nav__display-name').on('click', function(){
+        $('nav').addClass('nav__display-name--active');
+        $('nav').removeClass('nav__display-company--active');
+    });
+
+    $('.nav__display-company').on('click', function(){
+        $('nav').addClass('nav__display-company--active');
+        $('nav').removeClass('nav__display-name--active');
+    });
+
+    $('.nav__btn').mouseenter( function(){
+        if ( $('nav').hasClass('nav--closed') ) {
+            $('nav').addClass('nav--hovered');
+        }
+    });
+
+    $('.nav__btn').mouseleave( function(){
+        if ( $('nav').hasClass('nav--closed') ) {
+            $('nav').removeClass('nav--hovered');
+        }
     });
 
 });

@@ -50,7 +50,7 @@
 	</header><!-- #masthead -->
 
 	<nav class="nav--closed nav__display-name--active">
-		<div class="nav__btn">></div>
+		<div class="nav__btn"><</div>
 		<div class="nav__display-toggle">
 			<span class="nav__display-name">Name</span>
 			/
