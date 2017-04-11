@@ -23,7 +23,7 @@
 
   <div class="subscribe-msg">
       <div class="subscribe-msg__btn js-subscribe-close">X</div>
-      Never miss an interview, <a href="http://eepurl.com/cANwOv" target="blank" class="subscribe-msg__link">subscribe</a>
+      Never miss an interview, <a href="http://eepurl.com/cANwOv" target="blank" class="subscribe-msg__link js-subscribe--popup">subscribe</a>
   </div>
 
 <?php wp_footer(); ?>

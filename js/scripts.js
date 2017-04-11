@@ -6,7 +6,23 @@ $( document ).ready(function() {
         ga('send', {
             hitType: 'event',
             eventCategory: 'Share',
-            eventAction: 'Twitter-share'
+            eventAction: 'Twitter-share--popup'
+        });
+    });
+
+    $('.js-subscribe--footer').on('click', function(){
+        ga('send', {
+            hitType: 'event',
+            eventCategory: 'Subscribe',
+            eventAction: 'subscribe--footer'
+        });
+    });
+
+    $('.js-subscribe--popup').on('click', function(){
+        ga('send', {
+            hitType: 'event',
+            eventCategory: 'Subscribe',
+            eventAction: 'subscribe--popup'
         });
     });
 
