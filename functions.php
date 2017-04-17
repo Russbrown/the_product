@@ -177,3 +177,9 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
+add_filter( 'bbp_verify_nonce_request_url', 'my_bbp_verify_nonce_request_url', 999, 1 );
+function my_bbp_verify_nonce_request_url( $requested_url )
+{
+    return 'http://localhost:8888' . $_SERVER['REQUEST_URI'];
+}
+
