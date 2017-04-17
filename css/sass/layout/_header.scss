@@ -1,6 +1,43 @@
 // header
 
-.site-header {
-    background: $accent;
-    padding: 2em;
+.header{
+    background: $bgShade;
+    padding: 1rem;
+    font-size: 1rem;
+
+    &__wrapper {
+        max-width: 960px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    &__logo {
+        background: url(../img/logo.svg);
+        width: 36px;
+        height: 28px;
+        float: left;
+        margin-right: 1rem;
+    }
+
+    &__title {
+        font-family: $type-bold;
+        font-size: 1.286rem;
+        line-height: 2rem;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        a {
+            color: $text-light;
+            text-decoration: none;
+            position: relative;
+            top: 1px;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .header {
+        &__title {
+            font-size: .8rem;
+        }
+    }
 }

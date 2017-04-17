@@ -35,29 +35,20 @@
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'browny' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">		
+	<header id="masthead" class="header" role="banner">		
+		<div class="header__wrapper">
 			<?php if ( is_front_page() && is_home() ) : ?>
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><div class="site-logo"></div></a>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><div class="header__logo"></div></a>
+				<h1 class="header__title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php else : ?>
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><div class="site-logo"></div></a>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><div class="header__logo"></div></a>
+				<h1 class="header__title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php endif; ?>
-		</div><!-- .site-branding -->
-	</header><!-- #masthead -->
-
-	<nav class="nav--closed nav__display-name--active">
-		<div class="nav__btn fa fa-bars"></div>
-		<div class="nav__display-toggle">
-			<span class="nav__display-name">Name</span>
-			/
-			<span class="nav__display-company">Company</span>
+			<nav class="nav__wrapper">
+				<div class="nav__btn fa fa-bars"></div>
+				<?php wp_nav_menu(array( 'menu_class' => 'nav__items', 'container' => '' ));?>
+			</nav>
 		</div>
-		<?php $walker = new Menu_With_Description; ?>
-		<?php wp_nav_menu(array('walker' => $walker)); ?>
-	</nav>
+	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

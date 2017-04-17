@@ -6,11 +6,11 @@ html {
 body {
 	background: #fff;
 	font: 14px/21px $text-font;
-	color: $text-color;
+	color: $text-dark;
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
     margin: 0 auto;
-    font-family: $text-font;
+    font-family: $type-reg;
     overflow-x: hidden;
 }
 

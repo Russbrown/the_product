@@ -1,140 +1,100 @@
-nav {
-    font-family: $header-font;
-    position: fixed;
-    right: 0;
-    top: 0;
-    background: #333333;
-    box-shadow: 0 0 35px rgba(0,0,0,0.6);
-    z-index: 1;
-    width: 80%;
-    height: 100vh;
+.menu-item {
+    font-family: $type-bold;
+    font-size: .9rem;
+    display: inline-block;
+    padding: 0 .5rem;
+    line-height: 28px;
+    
+    a {
+        color: $text-light;
+        text-decoration: none;
+        padding-right: 2rem;
+        position: relative;
+        top: 1px;
+    }
+}
 
-    .nav__display-toggle {
-        color: #697479;
-        padding: 33px;
-        padding: 1.5rem;
-        font-size: 33px;
-        font-size: 1.5rem;
-        cursor: pointer;
+.nav {
+    &__wrapper {
+        font-family: $type-bold;
+        background: $bgShade;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 
-    .nav__btn {
+    &__btn {
+        display: none;
         font-size: 33px;
         font-size: 1.5rem;
-        position: absolute;
-        top: 37px;
-        left: -50px;
-        width: 52px;
+        width: 20px;
         height: 50px;
-        background: #333;
-        color: #d1dfe5;
-        font-size: 30px;
-        line-height: 48px;
-        text-align: center;
+        background: $bgShade;
+        color: $text-light;
+        line-height: 28px;
+        text-align: right;
         cursor: pointer;
         border-radius: 0;
     }
 
-    .nav__btn:hover {
+    &__btn:hover {
         color: #d1dfe5;
         text-shadow: 0 0 35px rgba(0,0,0,1);
         transition: color .5s, text-shadow .5s;
         -webkit-transition: color .5s, box-shadow .5s;
     }
 
-    ul {
-        margin-bottom: 0;
+    &__subscribe {
+        background: $accent;
+        text-transform: uppercase;
+        color: $text-dark;
+        text-align: center;
+        a {
+            padding: 5px .5rem !important;
+            color: $text-dark;
+        }
     }
 
-    li {
-        border-top: 1px solid rgba(59,60,60,0.8);
-        margin-bottom: 0;
-        line-height: 1rem;
-    }
+    &__mobile {
+        position: absolute;
+        top: 41px;
+        z-index: 1;
+        background: $bgShade;
+        padding: 0 .5rem;
+        width: 100%;
+        li {
+            display: block!important;
+            text-align: center;
+        }
 
-    a {
-        text-decoration: none;
-        padding: 1rem 1.5rem;
-        color: #d1dfe5 !important;
-        display: block;
-        position: relative;
-    }
-}
+        a {
+            padding-right: 0!important;
+            padding-left: 0!important;
+        }
 
-.nav__display-name--active {
-    .nav__display-name {
-        color: #d1dfe5;
-        transition: color .5s, text-shadow .5s;
-        -webkit-transition: color .5s, box-shadow .5s;
-        text-decoration: underline;
-    }
-
-    .name {
-        display: block;
-    }
-
-    .company {
-        display: none;
     }
 }
 
-.nav__display-company--active {
-    .nav__display-company {
-        color: #d1dfe5;
-        transition: color .5s, text-shadow .5s;
-        -webkit-transition: color .5s, box-shadow .5s;
-        text-decoration: underline;
-    }
+@media screen and (max-width: 630px) {
+    .nav {
 
-    .name {
-        display: none;
-    }
+        &__wrapper {
+            width: 139px;
+            text-align: right;
+        }
 
-    .company {
-        display: block;
-    }
-}
+        &__btn {
+            display: inline-block;
+        }
 
-.nav--closed {
-    right: -80%;
-    transition: right .5s;
-    -webkit-transition: right .5s;
-}
+        &__items {
+            float: left;
 
-.nav--open {
-    right: 0!important;
-    transition: right .5s;
-    -webkit-transition: right .5s;
-}
-
-.nav--hovered {
-    right: -79%;
-}
-
-@media screen and (min-width: 500px) {
-    nav {
-        width: 50%;
-    }
-
-    .nav--closed {
-        right: -50%;
-    }
-
-    .nav--hovered {
-        right: -49%;
-    }
-}
-
-@media screen and (min-width: 900px) {
-    nav {
-        width: 30%;
-    }
-
-    .nav--closed {
-        right: -30%;
-    } 
-
-    .nav--hovered {
-        right: -29%;
+            li:first-child,
+            li:nth-child(2),
+            li:nth-child(3) {
+                display: none;
+            }
+        }
     }
 }

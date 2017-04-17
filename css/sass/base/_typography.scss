@@ -2,32 +2,12 @@
 
 h1, h2, h3, h4, h5, h6 {
 	color: #181818;
-	font-family: $font;
+	font-family: $type-bold;
 	font-weight: normal; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { 
 	font-weight: inherit;
-	font-family: $header-font; 
+	font-family: $type-bold; 
 	color: #333;
-}
-
-.site-title {
-	font-size: 40px;
-	letter-spacing: 4px;
-	line-height: 40px;
-	border-bottom: 2px solid #333;
-	display: inline-block;
-
-	a {
-		text-decoration: none;
-		
-	}
-}
-
-.site-description {
-	font-size: 14px;
-	font-family: $text-font;
-	line-height: 18px;
-	margin-bottom: 0px;
 }
 
 h1 { font-size: 46px; line-height: 50px; margin-bottom: 6px;}
