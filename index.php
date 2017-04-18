@@ -18,7 +18,7 @@ get_header(); ?>
 
 		<section class="hero">
 			<div class="hero__lead">The stories behind people & products</div>
-			<div class="hero__subheader">The secrets behind successful people and products <span class="hero__subheader--subscribe">every week in your inbox</span></div>
+			<div class="hero__subheader">Compelling stories from people creating products <br> <span class="hero__subheader--subscribe">every week in your inbox</span></div>
 			
 			<div class="hero__subscribe">
 				<input type="email" class="hero__input" placeholder="Email address"/>
@@ -26,36 +26,30 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<?php if ( have_posts() ) : ?>
+		<section class="home-article__wrapper cf">
 
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
+			<?php if ( have_posts() ) : ?>
+
+				<?php if ( is_home() && ! is_front_page() ) : ?>
+					<header>
+						<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+					</header>
+				<?php endif; ?>
+
+				<?php /* Start the Loop */ ?>
+				<?php while ( have_posts() ) : the_post(); ?>
+
+					<?php get_template_part( 'template-parts/content', get_post_format() );?>
+
+				<?php endwhile; ?>
+
+			<?php else : ?>
+
+				<?php get_template_part( 'template-parts/content', 'none' ); ?>
+
 			<?php endif; ?>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php
-
-					/*
-					 * Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'template-parts/content', get_post_format() );
-				?>
-
-			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
+		</section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

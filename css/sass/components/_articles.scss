@@ -1,42 +1,95 @@
-.blog-index {
+a.home-article {
+    text-decoration: none;
+}
 
-    .post {
-        position: relative;
-        border-bottom: 3px solid $accent;
-    }
+.home-article {
 
-    .entry-title {
-        position: absolute;
-        bottom: 2rem;
-        background: #333;
-        padding: .5rem 1rem .5rem 2rem;
-        text-decoration: none;
-        color: #d4d4d4;
-        font-family: $header-font;
-        margin-bottom: 0;
-        max-width: 50%;
-    }
+    width: 31%;
+    float: left;
+    height: 300px;
+    background: #373F3A;
+    margin-right: 3.5%;
+    border-top: 1px solid $accent;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    transition: box-shadow .5s;
+    margin-bottom: 3.5%;
 
-    @media screen and (max-width:414px) {
-        .entry-title {
-            font-size: 24px;
-            line-height: 24px;
+    @media screen and (min-width: 980px) {
+        &:nth-child(3n+3) {
+            margin-right: 0;
         }
     }
 
-    .entry-image {
-        width: 100%;
-        display: block;
+    @media screen and (max-width: 980px) {
+        width: 48.5%;
+        margin-right: 3%;
+        &:nth-child(even) {
+            margin-right: 0;
+        }
     }
 
-    .entry-company {
-        position: absolute;
-        bottom: 2rem;
-        right: 0em;
-        padding: .5rem 2rem .5rem 1rem;
-        background: #333;
-        color: #d4d4d4;
+    @media screen and (max-width: 580px) {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    &:hover {
+       box-shadow: 0 0 20px rgba(255,255,255,0.5); 
+       transition: box-shadow .5s;
+       text-decoration: none;
+    }
+
+    &__wrapper {
+        max-width: 960px;
+        margin: 0 auto; 
+
+        @media screen and (max-width: 980px) {
+            padding: 0 1rem;
+        }
+    }
+
+    &__image {
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+        border-radius: 90px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        display: block;
+        margin: 2rem auto .5rem;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 1.285rem;
+        font-family: $type-bold;
         text-transform: uppercase;
+        color: $text-light;
+        border-bottom: 1px solid $text-light;
+        padding-bottom: .5rem;
+        margin: 0 2rem;
+        text-decoration: none;
+    }
+
+    &__company {
+        text-align: center;
+        font-size: 1.285rem;
+        font-family: $type-reg;
+        text-transform: uppercase;
+        color: $text-light;
+        margin: 0 2rem;
+        opacity: 0.6;
+        padding: 1rem;
+        text-decoration: none;
+    }
+
+    &__quote {
+        text-align: center;
+        font-size: 1.285rem;
+        font-family: $type-light;
+        color: $text-light;
+        opacity: 0.6;
+        padding: 0 2rem;
+        text-decoration: none;
     }
 }
 

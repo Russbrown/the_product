@@ -15,7 +15,7 @@
         font-family: $type-reg;
         color: $text-light;
         font-size: 1.714rem;
-        line-height: 1.1em;
+        line-height: 1.3em;
         padding-top: 2rem;
     }
 
@@ -33,6 +33,10 @@
         -webkit-appearance: none;
         padding: 0.25rem 1rem;
         width: 45%;
+
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
     }
 
     &__submit {
@@ -46,5 +50,9 @@
         text-transform: uppercase;
         color: $text-dark;
         padding: 0.25rem 1.5rem;
+        @media screen and (max-width: 600px) {
+            width: 100%;
+            margin-top: 1rem;
+        }
     }
 }
