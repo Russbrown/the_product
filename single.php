@@ -7,33 +7,28 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main blog-single" role="main">
+	<div id="primary">
+		<main id="main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<article id="post-<?php the_ID(); ?>" <?php post_class("single-article"); ?>>
 
 				<?php $image = get_field("title_image"); ?>
 
-				<img src="<?= $image['url'] ?>" class="entry-image"/>
+				<img src="<?= $image['url'] ?>" class="single-article__image"/>
 
-				<div class="article-wrapper">
+				<h1 class="single-article__title"><?php the_title(); ?></h1>
 
-					<header class="entry-header cf">
-						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-						<div class="entry-company"> <?= the_field("company") ?> </div>
-					</header><!-- .entry-header -->
+				<div class="single-article__company"> <?= the_field("company") ?> </div>
 
-					<div class="entry-content">
+				<div class="single-article__quote"> <?= the_field("article_quote") ?> </div>
+
+				<div class="single-article__wrapper">
+
+					<div class="single-article__content">
 						<?php the_content(); ?>
 					</div><!-- .entry-content -->
-
-					<a class="twitter-share-button js-twitter-share"
-						href="https://twitter.com/intent/tweet?text=Check%20out%20this%20interview%20with%20<?php the_title()?>%20of%20<?= the_field("company") ?>%20here:%20<?php the_permalink()?>%20via@the__product" 
-						data-size="large" target="_blank">
-						<i class="fa fa-twitter"></i>Tweet this article
-					</a>
 
 					<div class="next-posts cf">
 

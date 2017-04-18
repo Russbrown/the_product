@@ -18,7 +18,7 @@
       </div>
       <div class="footer__twitter">
         <a class="twitter-follow-button" data-show-count="false" data-show-screen-name="false" href="https://twitter.com/the__product">Follow</a>
-        <a class="twitter-share-button"href="https://twitter.com/intent/tweet">Tweet</a>
+        <a class="twitter-share-button" href="https://twitter.com/intent/tweet">Tweet</a>
       </div>
     </footer>
 
