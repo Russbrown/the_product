@@ -4,7 +4,7 @@ html {
 }
 
 body {
-	background: #fff;
+	background: $bg-lighter-shade;;
 	font: 14px/21px $text-font;
 	color: $text-dark;
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */

@@ -4,6 +4,7 @@
     background: $bgShade;
     padding: 1rem;
     font-size: 1rem;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
 
     &__wrapper {
         max-width: 960px;
@@ -36,6 +37,7 @@
 
 @media screen and (max-width: 360px) {
     .header {
+        
         &__title {
             font-size: .8rem;
         }

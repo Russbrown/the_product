@@ -16,6 +16,16 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main blog-index" role="main">
 
+		<section class="hero">
+			<div class="hero__lead">The stories behind people & products</div>
+			<div class="hero__subheader">The secrets behind successful people and products <span class="hero__subheader--subscribe">every week in your inbox</span></div>
+			
+			<div class="hero__subscribe">
+				<input type="email" class="hero__input" placeholder="Email address"/>
+				<input type="submit" class="hero__submit" value="Subscribe"/>
+			</div>
+		</section>
+
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>

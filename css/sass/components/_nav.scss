@@ -21,6 +21,7 @@
         position: absolute;
         top: 0;
         right: 0;
+        height: 28px;
     }
 
     &__btn {
@@ -28,7 +29,7 @@
         font-size: 33px;
         font-size: 1.5rem;
         width: 20px;
-        height: 50px;
+        height: 28px;
         background: $bgShade;
         color: $text-light;
         line-height: 28px;

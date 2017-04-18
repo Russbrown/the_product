@@ -1,0 +1,50 @@
+.hero {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+
+    &__lead {
+        font-family: $type-bold;
+        font-size: 2.571rem;
+        line-height: 1.1em;
+        color: $text-light;
+    }
+
+    &__subheader {
+        font-family: $type-reg;
+        color: $text-light;
+        font-size: 1.714rem;
+        line-height: 1.1em;
+        padding-top: 2rem;
+    }
+
+    &__subscribe {
+        margin-top: 1.5rem;
+    }
+
+    &__input {
+        font-family: $type-reg;
+        height: 43px;
+        font-size: 1.25rem;
+        line-height: 1.1em; 
+        display: inline-block;
+        border: none;
+        -webkit-appearance: none;
+        padding: 0.25rem 1rem;
+        width: 45%;
+    }
+
+    &__submit {
+        display: inline-block;
+        border: none;
+        -webkit-appearance: none;
+        font-family: $type-bold;
+        height: 43px;
+        font-size: 1.25rem;
+        background: $accent;
+        text-transform: uppercase;
+        color: $text-dark;
+        padding: 0.25rem 1.5rem;
+    }
+}
