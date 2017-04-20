@@ -1,8 +1,36 @@
 .hero {
-    text-align: center;
-    max-width: 720px;
+    max-width: 960px;
     margin: 0 auto;
-    padding: 5rem 2rem;
+    padding: 4rem 0rem 5rem;
+
+    &__img {
+        width: 188px;
+        height: 188px;
+        border-radius: 188px;
+        background: url('../img/hero__img.png') no-repeat;
+        background-size: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__img-wrapper {
+        float: left;
+        width: 33%;
+
+        @media screen and (max-width: 700px) {
+            display: none;
+        }
+    }
+
+    &__text-wrapper {
+        float: right;
+        width: 65.5%;
+        padding-top: .75rem;
+        @media screen and (max-width: 700px) {
+            width: 100%;
+            padding: 0 1rem;
+        }
+    }
 
     &__lead {
         font-family: $type-bold;
@@ -16,43 +44,16 @@
         color: $text-light;
         font-size: 1.714rem;
         line-height: 1.3em;
-        padding-top: 2rem;
+        padding-top: 1rem;
     }
 
     &__subscribe {
-        margin-top: 1.5rem;
-    }
-
-    &__input {
+        margin-top: 1rem;
         font-family: $type-reg;
-        height: 43px;
-        font-size: 1.25rem;
-        line-height: 1.1em; 
-        display: inline-block;
-        border: none;
-        -webkit-appearance: none;
-        padding: 0.25rem 1rem;
-        width: 45%;
-
-        @media screen and (max-width: 600px) {
-            width: 100%;
-        }
-    }
-
-    &__submit {
-        display: inline-block;
-        border: none;
-        -webkit-appearance: none;
-        font-family: $type-bold;
-        height: 43px;
-        font-size: 1.25rem;
-        background: $accent;
-        text-transform: uppercase;
-        color: $text-dark;
-        padding: 0.25rem 1.5rem;
-        @media screen and (max-width: 600px) {
-            width: 100%;
-            margin-top: 1rem;
-        }
+        color: $text-light;
+        font-size: 1.25rem;  
+        line-height: 1.3em;
+        border-bottom: 3px solid $accent;   
+        display: inline-block;  
     }
 }

@@ -10,29 +10,27 @@ $( document ).ready(function() {
         });
     });
 
-    $('.js-subscribe--footer').on('click', function(){
-        ga('send', {
-            hitType: 'event',
-            eventCategory: 'Subscribe',
-            eventAction: 'subscribe--footer'
-        });
-    });
-
-    $('.js-subscribe--popup').on('click', function(){
-        ga('send', {
-            hitType: 'event',
-            eventCategory: 'Subscribe',
-            eventAction: 'subscribe--popup'
-        });
-    });
-
     ////// NAV //////
 
     $('.nav__btn').on("click", function(){
         $('.nav__items').toggleClass('nav__mobile');
     });
 
+
+    ////// tweet quote
+
+    $('blockquote a').each( function(){
+        var intent = $(this).attr("href");
+        var url = document.location.href;
+        var quote = $(this).prev('p').text();
+        var newIntent = intent + "?url=" + url + "&text=" + quote;
+        $(this).attr("href", newIntent);
+    });
+
+
 });
+
+
 
 ( function() {
 	var is_webkit = navigator.userAgent.toLowerCase().indexOf( 'webkit' ) > -1,

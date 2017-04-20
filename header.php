@@ -17,7 +17,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	<link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/cfae0c92-589d-4e1b-be77-2648fb5b204a.css"/>
 	<link rel="shortcut icon" href="/myIcon.ico" type="image/x-icon" />
-
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@the__product">
 	<meta name="twitter:creator" content="@therusstler">

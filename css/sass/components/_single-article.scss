@@ -22,8 +22,8 @@
 
     &__company {
         text-align: center;
-        font-size: 1.571rem;
-        font-family: $type-medium;
+        font-size: 1.25rem;
+        font-family: $type-reg;
         text-transform: uppercase;
         color: $text-light;
         padding: 0.5rem 0 1.5rem;
@@ -43,7 +43,7 @@
     }
 
     &__wrapper {
-        margin-top: 3em;
+        margin-top: 2em;
         padding: 3em;
         background: $bgShade;
         border-top: 3px solid $accent;
@@ -53,7 +53,7 @@
         max-width: 700px;
         margin: 0 auto;
         font-size: 1.2rem;
-        line-height: 1.4em;
+        line-height: 1.6em;
         color: $text-light;
         font-family: $type-medium;
 
@@ -65,11 +65,15 @@
         }
 
         a {
-           color: $text-light;
-           border-bottom: 3px solid $accent;
+           color: $text-dark;
            text-decoration: none;
+           background: #2ad282;
+           padding: .25rem;
+           transition: all .5s;
+
            &:hover {
-               background: $accent;
+               border-bottom: 3px solid $text-light;
+               transition: all .5s;
            } 
         }
 
@@ -90,95 +94,37 @@
         }
     }
 
+    &__share {
+        margin-top: 1rem;
+        .fb_iframe_widget {
+            display: block;
+        }
+    }
+
 }
 
 .quote {
     &__tweet {
-        display: inline-block;
         font-size: 1rem;
+        line-height: 1.8em;
         position: relative;
-        top: -7px;
+        top: -12px;
         margin: 0 1rem;
         cursor: pointer;
-        font-family: $type-reg;
-        padding: 0 .5rem;
-        transition: border .5s;
+        font-family: $type-medium;
+        transition: all .5s;
+        background: $accent;
+        padding: .25rem .75rem !important;
+        color: $text-dark !important;
 
         &:hover {
-            background: $accent;
-            color: $text-dark;
-            border-bottom: 3px solid #fff;
-            transition: border .5s;
+            color: $accent;
+            border-bottom: 3px solid $text-light;
+            transition: all .5s;
         }
 
         i {
             padding-right: .5rem;
         }
     }
-
-    // &__facebook {
-    //     display: inline-block;
-    //     font-size: 1rem;
-    //     position: relative;
-    //     top: -7px;
-    //     margin: 0 1rem;
-    //     cursor: pointer;
-    //     font-family: $type-reg;
-    //     padding: 0 .5rem;
-
-    //     &:hover {
-    //         background: $accent;
-    //         border: none;
-    //         color: $text-dark;
-    //     }
-
-    //     i {
-    //         padding-right: .5rem;
-    //     }
-    // }
-}
-
-// .twitter-share-button {
-//     box-shadow: 0 0 20px rgba(0,0,0,0.3);
-//     border-radius: 10px;
-//     padding: 14px;
-//     padding: 1rem;
-//     color: #333;
-//     font-family: $header-font;
-//     margin: 0 auto 4.66rem;
-//     width: 185px;
-//     display: block;
-//     border: 3px solid #333;
-//     text-decoration: none;
-//     text-align: center;
-//     -webkit-user-select: none;
-
-
-//     i {
-//         padding-right: 5px;
-//         font-size: 20px;
-//         font-size: 1.45rem;
-//         position: relative;
-//         top: 2px;
-//     }
-// }
-
-// .twitter-share-button:hover {
-//    box-shadow: 0 0 2px rgba(0,0,0,0.1); 
-// }
-
-// .twitter-share-button:active {
-//     box-shadow: 0 0 2px rgba(0,0,0,0.3);
-//     border-radius: 10px;  
-// }
-
-// .twitter-share-button:focus {
-//     background: #fff;
-// }
-
-@media screen and (min-width: 768px) {
-    .twitter-share-button {
-        font-size: 14px;
-        font-size: 1rem;
-    }  
 }

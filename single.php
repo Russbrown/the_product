@@ -28,57 +28,24 @@ get_header(); ?>
 
 					<div class="single-article__content">
 						<?php the_content(); ?>
+
+						Thanks for reading, you can find more stories <a href="/">here.</a>
+						
+						<div class="single-article__subscribe">
+							<div class="subscribe__text">Get more interviews like this in your inbox each week.</div>
+							<input type="email" class="subscribe__input" placeholder="Email address"/>
+							<input type="submit" class="subscribe__submit" value="Subscribe"/>
+						</div>
+
+						<div class="single-article__share">
+							<a class="twitter-follow-button" data-show-count="false" data-show-screen-name="false" href="https://twitter.com/the__product">Follow</a>
+							<a class="twitter-share-button" href="https://twitter.com/intent/tweet">Tweet</a>
+							<div class="fb-like" data-href="https://www.facebook.com/theprdct/" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+						</div>
+
 					</div><!-- .entry-content -->
 
-					<div class="next-posts cf">
 
-						<h2 class="next-posts__title">Suggested Interviews</h2>
-
-						<?php 
-						// get next post
-						$next_post = get_next_post();
-						if ($next_post->ID != '') {
-							$next_url = get_permalink($next_post->ID);
-							$next_company = get_field('company', $next_post->ID);
-							$next_image = get_field('title_image', $next_post->ID);
-							?>
-							<a href="<?= $next_url ?>" class="next-post cf">
-								<div class="next-post__image-wrap">
-									<img class="next-post__image" src="<?= $next_image['url'] ?>"/>
-								</div> 
-								<div class="next-post__title"><?= $next_post->post_title ?></div>
-								<br>
-								<div class="next-post__company"><?= $next_company ?></div>
-							</a>
-							<?php
-						} else {
-							// do nowt
-						}
-						?>
-
-						<?php
-						// get prev post
-						$prev_post = get_previous_post();
-						if ($prev_post->ID != '') {
-							$prev_url = get_permalink($prev_post->ID);
-							$prev_company = get_field('company', $prev_post->ID);
-							$prev_image = get_field('title_image', $prev_post->ID);
-							?>
-							<a href="<?= $prev_url ?>" class="next-post cf">
-								<div class="next-post__image-wrap">
-									<img class="next-post__image" src="<?= $prev_image['url'] ?>"/>
-								</div>
-								<div class="next-post__title"><?= $prev_post->post_title ?></div>
-								<br>
-								<div class="next-post__company"><?= $prev_company ?></div>
-							</a>
-							<?php
-						} else {
-							// do nowt
-						}
-						?>
-
-					</div>
 
 				</div>
 

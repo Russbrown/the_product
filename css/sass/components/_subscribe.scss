@@ -1,0 +1,40 @@
+.subscribe {
+    &__text {
+        width: 100%;
+        color: $text-light;
+        font-family: $type-medium;
+    }
+
+    &__input {
+        font-family: $type-reg;
+        height: 43px;
+        font-size: 1.25rem;
+        line-height: 1.1em; 
+        display: inline-block;
+        border: none;
+        -webkit-appearance: none;
+        padding: 0.25rem 1rem;
+        width: 45%;
+
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
+    }
+
+    &__submit {
+        display: inline-block;
+        border: none;
+        -webkit-appearance: none;
+        font-family: $type-bold;
+        height: 43px;
+        font-size: 1.25rem;
+        background: $accent;
+        text-transform: uppercase;
+        color: $text-dark;
+        padding: 0.25rem 1.5rem;
+        @media screen and (max-width: 600px) {
+            width: 100%;
+            margin-top: 1rem;
+        }
+    }
+}

@@ -13,11 +13,13 @@
     }
 
     &__logo {
-        background: url(../img/logo.svg);
-        width: 36px;
-        height: 28px;
+        background: url(../img/logo.svg) no-repeat;
+        width: 37px;
+        height: 34px;
         float: left;
         margin-right: 1rem;
+        position: relative;
+        top:-2px;
     }
 
     &__title {

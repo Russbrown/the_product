@@ -12,14 +12,7 @@
 	</div><!-- #content -->
 
 		<footer class="footer">
-      <div class="footer__author">Cobbled together by <a href="https://twitter.com/therusstler">Russ Brown</a></div>
-      <div class="footer__facebook">
-        <div class="fb-like" data-href="https://www.facebook.com/theprdct/" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
-      </div>
-      <div class="footer__twitter">
-        <a class="twitter-follow-button" data-show-count="false" data-show-screen-name="false" href="https://twitter.com/the__product">Follow</a>
-        <a class="twitter-share-button" href="https://twitter.com/intent/tweet">Tweet</a>
-      </div>
+      <div class="footer__author">Consider supporting us on Patreon</div>
     </footer>
 
 	</div><!-- #page -->
