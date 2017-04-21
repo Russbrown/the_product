@@ -98,6 +98,7 @@
     &__subscribe-popup--active {
         right: 13px;
         transition: right .5s;
+        
         @media screen and (max-width: 515px) {
             right: 2%;
         }
