@@ -2,11 +2,36 @@ $( document ).ready(function() {
 	
     ////// ANALYTICS //////
 
-    $('.js-twitter-share').on('click', function(){
+    $('.js-nav-sub-event').on('click', function(){
         ga('send', {
             hitType: 'event',
-            eventCategory: 'Share',
-            eventAction: 'Twitter-share--popup'
+            eventCategory: 'Subscribe - Nav',
+            eventAction: 'Subscribe - Nav'
+        });
+    });
+
+    $('.js-hero-sub-event').on('click', function(){
+        ga('send', {
+            hitType: 'event',
+            eventCategory: 'Subscribe - Hero',
+            eventAction: 'Subscribe - Hero'
+        });
+    });
+
+    $('.js-article-sub-event').on('click', function(){
+        ga('send', {
+            hitType: 'event',
+            eventCategory: 'Subscribe - Article',
+            eventAction: 'Subscribe - Article'
+        });
+    });
+
+    
+    $('.js-sub-event-popup-submit').on('click', function(){
+        ga('send', {
+            hitType: 'event',
+            eventCategory: 'Subscribe - Popup - Submitted',
+            eventAction: 'Subscribe - Popup - Submitted'
         });
     });
 

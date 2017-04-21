@@ -42,7 +42,7 @@ get_header(); ?>
 								<div style="position: absolute; left: -5000px;" aria-hidden="true">
 									<input type="text" name="b_e7510dfc6336ee69f4cbdd4be_106483b035" tabindex="-1" value="">
 								</div>
-								<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="subscribe__submit">
+								<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="subscribe__submit js-article-sub-event">
 							</form>
 						</div>
 
