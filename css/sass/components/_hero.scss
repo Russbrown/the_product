@@ -20,6 +20,7 @@
     &__img-wrapper {
         float: left;
         width: 33%;
+        margin-top: .75rem;
 
         @media screen and (max-width: 700px) {
             display: none;
