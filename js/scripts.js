@@ -27,6 +27,9 @@ $( document ).ready(function() {
         $(this).attr("href", newIntent);
     });
 
+    $('.js-subscribe').on("click", function(){
+        $('.nav__subscribe-popup').toggleClass('nav__subscribe-popup--active');
+    });
 
 });
 

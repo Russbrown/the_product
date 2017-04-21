@@ -1,12 +1,14 @@
 .footer {
-
     padding: 2rem;
+    background: $bgShade;
     text-align: center;
 
     &__author {
+        max-width: 960px;
+        margin: 0 auto;
         width: 100%;
         color: $text-light;
-        padding-bottom: 1rem;
+        font-family: $type-medium;
         
         a {
             color: $text-light;
@@ -15,15 +17,5 @@
                 border-bottom: 3px solid $accent;
             }
         }
-    }
-
-    &__twitter {
-        display: inline-block;
-    }
-
-    &__facebook {
-        display: inline-block;
-        position: relative;
-        top: -6px;
     }
 }

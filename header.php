@@ -45,9 +45,29 @@
 			<?php endif; ?>
 			<nav class="nav__wrapper">
 				<div class="nav__btn fa fa-bars"></div>
-				<?php wp_nav_menu(array( 'menu_class' => 'nav__items', 'container' => '' ));?>
+				<ul class="nav__items">
+					<li class="nav__item"><a href="<?php echo site_url(); ?>">Interviews</a></li>
+					<li class="nav__item"><a href="<?php echo site_url(); ?>/blog">Blog</a></li>
+				</ul>
+				<div class="nav__item nav__subscribe js-subscribe">Subscribe</div>
 			</nav>
 		</div>
 	</header><!-- #masthead -->
+
+	<div class="nav__subscribe-popup">
+		<i class="fa fa-times subscribe__close js-subscribe"></i>
+		<div class="subscribe__text">Get new interviews every week. No spam. Ever.</div>
+		<form action="//theprdct.us15.list-manage.com/subscribe/post?u=e7510dfc6336ee69f4cbdd4be&amp;id=106483b035" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			<input type="email" value="" name="EMAIL" class="required email subscribe__input" placeholder="Email address" id="mce-EMAIL">
+			<div id="mce-responses" class="clear">
+				<div class="response" id="mce-error-response" style="display:none"></div>
+				<div class="response" id="mce-success-response" style="display:none"></div>
+			</div>
+			<div style="position: absolute; left: -5000px;" aria-hidden="true">
+				<input type="text" name="b_e7510dfc6336ee69f4cbdd4be_106483b035" tabindex="-1" value="">
+			</div>
+			<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="subscribe__submit">
+		</form>
+	</div>
 
 	<div id="content" class="site-content">

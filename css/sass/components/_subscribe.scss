@@ -3,6 +3,7 @@
         width: 100%;
         color: $text-light;
         font-family: $type-medium;
+        padding-bottom: .5rem;
     }
 
     &__input {
@@ -14,15 +15,19 @@
         border: none;
         -webkit-appearance: none;
         padding: 0.25rem 1rem;
-        width: 45%;
+        width: 65%;
+        float: left;
 
         @media screen and (max-width: 600px) {
             width: 100%;
         }
+
+        &:focus {
+            outline: 2px solid $accent;
+        }
     }
 
     &__submit {
-        display: inline-block;
         border: none;
         -webkit-appearance: none;
         font-family: $type-bold;
@@ -32,9 +37,18 @@
         text-transform: uppercase;
         color: $text-dark;
         padding: 0.25rem 1.5rem;
+        width: 35%;
         @media screen and (max-width: 600px) {
             width: 100%;
             margin-top: 1rem;
         }
+    }
+
+    &__close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        color: $text-light;
+        cursor: pointer;
     }
 }

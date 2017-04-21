@@ -29,12 +29,21 @@ get_header(); ?>
 					<div class="single-article__content">
 						<?php the_content(); ?>
 
-						Thanks for reading, you can find more stories <a href="/">here.</a>
+						<div class="single-article__read-more">Still thirsty for more? Check out some <a href="<?php echo site_url(); ?>">more interviews</a></div>
 						
 						<div class="single-article__subscribe">
-							<div class="subscribe__text">Get more interviews like this in your inbox each week.</div>
-							<input type="email" class="subscribe__input" placeholder="Email address"/>
-							<input type="submit" class="subscribe__submit" value="Subscribe"/>
+							<form action="//theprdct.us15.list-manage.com/subscribe/post?u=e7510dfc6336ee69f4cbdd4be&amp;id=106483b035" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+								<div class="subscribe__text">Get more interviews like this in your inbox each week.</div>
+								<input type="email" value="" name="EMAIL" class="required email subscribe__input" placeholder="Email address" id="mce-EMAIL">
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+								<div style="position: absolute; left: -5000px;" aria-hidden="true">
+									<input type="text" name="b_e7510dfc6336ee69f4cbdd4be_106483b035" tabindex="-1" value="">
+								</div>
+								<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="subscribe__submit">
+							</form>
 						</div>
 
 						<div class="single-article__share">

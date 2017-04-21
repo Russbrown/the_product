@@ -22,8 +22,8 @@ get_header(); ?>
 			</div>
 			<div class="hero__text-wrapper">
 				<div class="hero__lead">Hi,<br>I'm Russ</div>
-				<div class="hero__subheader">I interview people who design and build products</div>
-				<div class="hero__subscribe">
+				<div class="hero__subheader">I interview entrepreneurs and designers about their products. Find out what I learned. </div>
+				<div class="hero__subscribe js-subscribe">
 					Get new interviews every week
 					<!--<input type="email" class="hero__input" placeholder="Email address"/>
 					<input type="submit" class="hero__submit" value="Subscribe"/>-->
