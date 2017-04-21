@@ -3,6 +3,10 @@
     margin: 0 auto;
     padding: 4rem 0rem 5rem;
 
+    @media screen and (max-width: 990px) {
+        padding: 2rem 0rem 2.5rem;
+    }
+
     &__img {
         width: 188px;
         height: 188px;
@@ -26,6 +30,7 @@
         float: right;
         width: 65.5%;
         padding-top: .75rem;
+        padding-right: 3rem;
         @media screen and (max-width: 700px) {
             width: 100%;
             padding: 0 1rem;

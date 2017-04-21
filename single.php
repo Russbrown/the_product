@@ -29,7 +29,7 @@ get_header(); ?>
 					<div class="single-article__content">
 						<?php the_content(); ?>
 
-						<div class="single-article__read-more">Still thirsty for more? Check out some <a href="<?php echo site_url(); ?>">more interviews</a></div>
+						<div class="single-article__read-more">Still thirsty for more? 🍺 Check out some <a href="<?php echo site_url(); ?>">more interviews</a></div>
 						
 						<div class="single-article__subscribe">
 							<form action="//theprdct.us15.list-manage.com/subscribe/post?u=e7510dfc6336ee69f4cbdd4be&amp;id=106483b035" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>

@@ -65,10 +65,9 @@
         }
 
         a {
-           color: $text-dark;
+           color: $text-light;
            text-decoration: none;
-           background: #2ad282;
-           padding: .25rem;
+           border-bottom: 3px solid $accent;
            transition: all .5s;
 
            &:hover {

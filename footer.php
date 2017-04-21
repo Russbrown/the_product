@@ -12,7 +12,7 @@
 	</div><!-- #content -->
 
 		<footer class="footer">
-      <div class="footer__author">Thanks for reading, consider supporting us on Patreon</div>
+      <div class="footer__author">Thanks for reading 🙌</div>
     </footer>
 
 	</div><!-- #page -->
