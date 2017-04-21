@@ -22,6 +22,10 @@
         border-radius: 0;
         position: relative;
         top: 1px;
+
+        @media screen and (max-width: 631px) {
+            margin-right: 2rem;
+        }
     }
 
     &__btn:hover {
@@ -42,6 +46,10 @@
         margin-left: 2rem;
         line-height: 28px;
         color: $text-light;
+
+        @media screen and (max-width: 631px) {
+            margin-left: 0;
+        }
         
         a {
             color: $text-light;
@@ -98,10 +106,12 @@
     &__mobile {
         position: absolute;
         top: 41px;
+        left: 0;
         z-index: 1;
         background: $bgShade;
         padding: 0 .5rem;
         width: 100%;
+
         li {
             display: block!important;
             text-align: center;

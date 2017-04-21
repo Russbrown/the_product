@@ -52,6 +52,10 @@ get_header(); ?>
 							<div class="fb-like" data-href="https://www.facebook.com/theprdct/" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
 						</div>
 
+						<div class="single-article__recent">
+							<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
+						</div>
+
 					</div><!-- .entry-content -->
 
 

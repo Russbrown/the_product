@@ -28,11 +28,15 @@
         line-height: 2rem;
         margin-bottom: 0;
         text-transform: uppercase;
+
         a {
             color: $text-light;
             text-decoration: none;
             position: relative;
             top: 1px;
+            @media screen and (max-width: 312px) {
+                opacity: 0;
+            }
         }
     }
 }
