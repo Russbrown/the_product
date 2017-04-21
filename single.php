@@ -7,83 +7,58 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main blog-single" role="main">
+	<div id="primary">
+		<main id="main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<article id="post-<?php the_ID(); ?>" <?php post_class("single-article"); ?>>
 
 				<?php $image = get_field("title_image"); ?>
 
-				<img src="<?= $image['url'] ?>" class="entry-image"/>
+				<img src="<?= $image['url'] ?>" class="single-article__image"/>
 
-				<div class="article-wrapper">
+				<h1 class="single-article__title"><?php the_title(); ?></h1>
 
-					<header class="entry-header cf">
-						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-						<div class="entry-company"> <?= the_field("company") ?> </div>
-					</header><!-- .entry-header -->
+				<div class="single-article__company"> <?= the_field("company") ?> </div>
 
-					<div class="entry-content">
+				<div class="single-article__quote"> <?= the_field("article_quote") ?> </div>
+
+				<div class="single-article__wrapper">
+
+					<div class="single-article__content">
 						<?php the_content(); ?>
+
+						<div class="single-article__read-more">Still thirsty for more? 🍺 Check out some <a href="<?php echo site_url(); ?>">more interviews</a></div>
+						
+						<div class="single-article__subscribe">
+							<form action="//theprdct.us15.list-manage.com/subscribe/post?u=e7510dfc6336ee69f4cbdd4be&amp;id=106483b035" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+								<div class="subscribe__text">Get more interviews like this in your inbox each week.</div>
+								<input type="email" value="" name="EMAIL" class="required email subscribe__input" placeholder="Email address" id="mce-EMAIL">
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+								<div style="position: absolute; left: -5000px;" aria-hidden="true">
+									<input type="text" name="b_e7510dfc6336ee69f4cbdd4be_106483b035" tabindex="-1" value="">
+								</div>
+								<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="subscribe__submit">
+							</form>
+						</div>
+
+						<div class="single-article__share">
+							<a class="twitter-follow-button" data-show-count="false" data-show-screen-name="false" href="https://twitter.com/the__product">Follow</a>
+							<a class="twitter-share-button" href="https://twitter.com/intent/tweet">Tweet</a>
+							<div class="fb-like" data-href="https://www.facebook.com/theprdct/" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+						</div>
+
+						<div class="single-article__recent">
+							<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
+						</div>
+
 					</div><!-- .entry-content -->
 
-					<a class="twitter-share-button js-twitter-share"
-						href="https://twitter.com/intent/tweet?text=Check%20out%20this%20interview%20with%20<?php the_title()?>%20of%20<?= the_field("company") ?>%20here:%20<?php the_permalink()?>%20via@the__product" 
-						data-size="large" target="_blank">
-						<i class="fa fa-twitter"></i>Tweet this article
-					</a>
 
-					<div class="next-posts cf">
-
-						<h2 class="next-posts__title">Suggested Interviews</h2>
-
-						<?php 
-						// get next post
-						$next_post = get_next_post();
-						if ($next_post->ID != '') {
-							$next_url = get_permalink($next_post->ID);
-							$next_company = get_field('company', $next_post->ID);
-							$next_image = get_field('title_image', $next_post->ID);
-							?>
-							<a href="<?= $next_url ?>" class="next-post cf">
-								<div class="next-post__image-wrap">
-									<img class="next-post__image" src="<?= $next_image['url'] ?>"/>
-								</div> 
-								<div class="next-post__title"><?= $next_post->post_title ?></div>
-								<br>
-								<div class="next-post__company"><?= $next_company ?></div>
-							</a>
-							<?php
-						} else {
-							// do nowt
-						}
-						?>
-
-						<?php
-						// get prev post
-						$prev_post = get_previous_post();
-						if ($prev_post->ID != '') {
-							$prev_url = get_permalink($prev_post->ID);
-							$prev_company = get_field('company', $prev_post->ID);
-							$prev_image = get_field('title_image', $prev_post->ID);
-							?>
-							<a href="<?= $prev_url ?>" class="next-post cf">
-								<div class="next-post__image-wrap">
-									<img class="next-post__image" src="<?= $prev_image['url'] ?>"/>
-								</div>
-								<div class="next-post__title"><?= $prev_post->post_title ?></div>
-								<br>
-								<div class="next-post__company"><?= $prev_company ?></div>
-							</a>
-							<?php
-						} else {
-							// do nowt
-						}
-						?>
-
-					</div>
 
 				</div>
 

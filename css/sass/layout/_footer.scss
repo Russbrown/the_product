@@ -1,33 +1,20 @@
 .footer {
-
     padding: 2rem;
+    background: $bgShade;
+    text-align: center;
 
-    .social-icons {
-        width: 163px;
+    &__author {
+        max-width: 960px;
         margin: 0 auto;
+        width: 100%;
+        color: $text-light;
+        font-family: $type-medium;
+        
         a {
-            display: inline-block;
+            color: $text-light;
             text-decoration: none;
-            text-align: center;
-            height: 50px;
-            width: 50px;
-            font-size: 3em;
-            color: #333;
-            transition: color .25s;
-            cursor: pointer;
-        }
-        a:hover {
-            color: $accent;
-            transition: color .25s;
-        }
-    }
-
-    @media screen and (min-width: 450px) {
-        .social-icons {
-            width: 301px;
-            a {
-                width: 97px;
-                font-size: 4rem;
+            &:hover {
+                border-bottom: 3px solid $accent;
             }
         }
     }

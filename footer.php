@@ -9,30 +9,13 @@
 
 ?>
 
-  <form action="//theprdct.us15.list-manage.com/subscribe/post?u=e7510dfc6336ee69f4cbdd4be&amp;id=106483b035" method="post" name="mc-embedded-subscribe-form" class="validate signup-form" target="_blank" novalidate="" _lpchecked="1">
-    <label class="signup-label" for="mce-EMAIL">Like this? Never miss an interview, subscribe.</label>
-    <input class="signup-input" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="">
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e7510dfc6336ee69f4cbdd4be_106483b035" tabindex="-1" value=""></div>
-    <input type="submit" value="Subscribe" name="subscribe" class="signup-button js-subscribe--footer" id="signup-button"/>
-  </form>
-
 	</div><!-- #content -->
 
 		<footer class="footer">
-      <div class="social-icons">
-        <a href="https://twitter.com/the__product" class="fa fa-twitter"></a>
-        <a href="https://www.instagram.com/the__product/" class="fa fa-instagram"></a>
-        <a href="https://www.linkedin.com/in/russell-brown-07740a21/" class="fa fa-linkedin"></a>
-      </div>
-		</footer>
+      <div class="footer__author">Thanks for reading 🙌</div>
+    </footer>
 
 	</div><!-- #page -->
-
-  <div class="subscribe-msg">
-      <div class="subscribe-msg__btn js-subscribe-close">X</div>
-      Never miss an interview, <a href="http://eepurl.com/cANwOv" target="blank" class="subscribe-msg__link js-subscribe--popup">subscribe</a>
-  </div>
 
 <?php wp_footer(); ?>
 
@@ -65,6 +48,32 @@
   ga('send', 'pageview');
 
 </script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
 
 </body>
 </html>

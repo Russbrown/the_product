@@ -17,7 +17,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	<link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/cfae0c92-589d-4e1b-be77-2648fb5b204a.css"/>
 	<link rel="shortcut icon" href="/myIcon.ico" type="image/x-icon" />
-
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@the__product">
 	<meta name="twitter:creator" content="@therusstler">
@@ -35,29 +34,40 @@
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'browny' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">		
+	<header id="masthead" class="header" role="banner">		
+		<div class="header__wrapper">
 			<?php if ( is_front_page() && is_home() ) : ?>
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><div class="site-logo"></div></a>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><div class="header__logo"></div></a>
+				<h1 class="header__title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php else : ?>
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><div class="site-logo"></div></a>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><div class="header__logo"></div></a>
+				<h1 class="header__title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php endif; ?>
-		</div><!-- .site-branding -->
+			<nav class="nav__wrapper">
+				<div class="nav__btn fa fa-bars"></div>
+				<ul class="nav__items">
+					<li class="nav__item"><a href="<?php echo site_url(); ?>">Interviews</a></li>
+					<li class="nav__item"><a href="<?php echo site_url(); ?>/blog">Blog</a></li>
+				</ul>
+				<div class="nav__item nav__subscribe js-subscribe">Subscribe</div>
+			</nav>
+		</div>
 	</header><!-- #masthead -->
 
-	<nav class="nav--closed nav__display-name--active">
-		<div class="nav__btn fa fa-bars"></div>
-		<div class="nav__display-toggle">
-			<span class="nav__display-name">Name</span>
-			/
-			<span class="nav__display-company">Company</span>
-		</div>
-		<?php $walker = new Menu_With_Description; ?>
-		<?php wp_nav_menu(array('walker' => $walker)); ?>
-	</nav>
+	<div class="nav__subscribe-popup">
+		<i class="fa fa-times subscribe__close js-subscribe"></i>
+		<div class="subscribe__text">Get new interviews every week. No spam. Ever.</div>
+		<form action="//theprdct.us15.list-manage.com/subscribe/post?u=e7510dfc6336ee69f4cbdd4be&amp;id=106483b035" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			<input type="email" value="" name="EMAIL" class="required email subscribe__input" placeholder="Email address" id="mce-EMAIL">
+			<div id="mce-responses" class="clear">
+				<div class="response" id="mce-error-response" style="display:none"></div>
+				<div class="response" id="mce-success-response" style="display:none"></div>
+			</div>
+			<div style="position: absolute; left: -5000px;" aria-hidden="true">
+				<input type="text" name="b_e7510dfc6336ee69f4cbdd4be_106483b035" tabindex="-1" value="">
+			</div>
+			<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="subscribe__submit">
+		</form>
+	</div>
 
 	<div id="content" class="site-content">

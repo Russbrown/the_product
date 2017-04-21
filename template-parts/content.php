@@ -7,18 +7,17 @@
 
 ?>
 
-<a href="<?= get_permalink() ?>">
+<a href="<?= get_permalink() ?>" class="home-article">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-		<div class="entry-header">
-			<h2 class="entry-title"><?php the_title(); ?></h2>
-		</div><!-- .entry-header -->
-
 		<?php $image = get_field("title_image"); ?>
+		<img src="<?= $image['url'] ?>" class="home-article__image"/>
 
-		<img src="<?= $image['url'] ?>" class="entry-image"/>
+		<h2 class="home-article__title"><?php the_title(); ?></h2>
 
-		<div class="entry-company"> <?= the_field("company") ?> </div>
+		<div class="home-article__company"> <?= the_field("company") ?> </div>
+
+		<div class="home-article__quote"> <?= the_field("article_quote") ?> </div>
 
 	</article><!-- #post-## -->
 </a>

@@ -1,0 +1,140 @@
+.single-article {
+
+    &__image {
+        width: 143px;
+        height: 143px;
+        object-fit: cover;
+        border-radius: 143px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        display: block;
+        margin: 4rem auto .5rem;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 2rem;
+        font-family: $type-bold;
+        line-height: 1.2em;
+        color: $text-light;
+        padding: 1rem 0 0;
+        text-decoration: none;
+    }
+
+    &__company {
+        text-align: center;
+        font-size: 1.25rem;
+        font-family: $type-reg;
+        text-transform: uppercase;
+        color: $text-light;
+        padding: 0.5rem 0 1.5rem;
+        text-decoration: none;
+        border-bottom: 1px solid $text-light;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    &__quote {
+        text-align: center;
+        font-size: 1.571rem;
+        font-family: $type-light;
+        color: $text-light;
+        padding: 1.5rem;
+        text-decoration: none;
+    }
+
+    &__wrapper {
+        margin-top: 2em;
+        padding: 3em;
+        background: $bgShade;
+        border-top: 3px solid $accent;
+    }
+
+    &__content {
+        max-width: 700px;
+        margin: 0 auto;
+        font-size: 1.2rem;
+        line-height: 1.6em;
+        color: $text-light;
+        font-family: $type-medium;
+
+        h2 {
+            font-family: $type-bold;
+            font-size: 1.4rem;
+            color: $text-light;
+            line-height: 1.2em;
+        }
+
+        a {
+           color: $text-light;
+           text-decoration: none;
+           border-bottom: 3px solid $accent;
+           transition: all .5s;
+
+           &:hover {
+               border-bottom: 3px solid $text-light;
+               transition: all .5s;
+           } 
+        }
+
+        img {
+            width: 100%;
+        }
+
+        blockquote {
+            border-top: 3px solid $accent;
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid $accent;
+            margin-bottom: 1rem;
+            font-size: 2em;
+            font-family: $type-bold;
+            line-height: 1.2em;
+            text-align: center;
+        }
+    }
+
+    &__share {
+        margin-top: 1rem;
+        .fb_iframe_widget {
+            display: block;
+        }
+    }
+
+    &__subscribe {
+        margin: 2rem 0 3rem;
+        max-width: 500px;
+    }
+
+    &__recent {
+        margin: 3rem 0;
+        max-width: 500px;
+    }
+
+}
+
+.quote {
+    &__tweet {
+        font-size: 1rem;
+        line-height: 1.8em;
+        position: relative;
+        top: -12px;
+        margin: 0 1rem;
+        cursor: pointer;
+        font-family: $type-medium;
+        transition: all .5s;
+        border-bottom: none !important;
+        padding: .25rem .75rem !important;
+        color: $text-dark !important;
+        background: $accent;
+
+        &:hover {
+            color: $text-light !important;
+            border-bottom: none !important;
+            transition: all .5s;
+        }
+
+        i {
+            padding-right: .5rem;
+        }
+    }
+}

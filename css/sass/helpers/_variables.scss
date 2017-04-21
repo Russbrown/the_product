@@ -1,11 +1,21 @@
 // variables
 
-$text-color: #333; // not blue anymore, woops
+$text-dark: #3D443E; // not blue anymore, woops
+$text-light: #EAEAEA;
 
-$accent: #54f65c;
+$bgShade: #373F3A;
+$bg-lighter-shade: #47514B;
+
+$accent: #2AD282;
 
 $font: 'helvetica', sans-serif;
 
 $header-font: 'Futura LT W01 Bold';
 
 $text-font: 'Futura LT W01 Light';
+
+$type-bold: 'Avenir Next LT W01 Bold';
+$type-medium: 'AvenirNextLTW01-Medium';
+$type-demi: 'Avenir Next LT W01 Demi';
+$type-reg: 'AvenirNextLTW01-Regular';
+$type-light: 'AvenirNextLTW01-UltraLi';

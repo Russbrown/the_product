@@ -24,10 +24,18 @@
 
 @import 'layout/main';
 
-@import 'components/articles';
+@import 'components/home-articles';
+
+@import 'components/single-article';
 
 @import 'components/mailchimp';
 
 @import 'components/next-post';
 
 @import 'components/nav';
+
+@import 'components/hero';
+
+@import 'components/subscribe';
+
+@import 'components/404';
