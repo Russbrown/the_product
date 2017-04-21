@@ -47,7 +47,7 @@
 				<div class="nav__btn fa fa-bars"></div>
 				<ul class="nav__items">
 					<li class="nav__item"><a href="<?php echo site_url(); ?>">Interviews</a></li>
-					<li class="nav__item"><a href="<?php echo site_url(); ?>/blog">Blog</a></li>
+					<!--<li class="nav__item"><a href="<?php echo site_url(); ?>/blog">Blog</a></li>-->
 				</ul>
 				<div class="nav__item nav__subscribe js-subscribe">Subscribe</div>
 			</nav>
