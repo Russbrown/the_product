@@ -56,7 +56,7 @@
 
 	<div class="nav__subscribe-popup">
 		<i class="fa fa-times subscribe__close js-subscribe"></i>
-		<div class="subscribe__text">Get new interviews every week. No spam. Ever.</div>
+		<div class="subscribe__text">Get new interviews in your inbox. No spam. Ever.</div>
 		<form action="//theprdct.us15.list-manage.com/subscribe/post?u=e7510dfc6336ee69f4cbdd4be&amp;id=106483b035" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 			<input type="email" value="" name="EMAIL" class="required email subscribe__input" placeholder="Email address" id="mce-EMAIL">
 			<div id="mce-responses" class="clear">

@@ -23,7 +23,7 @@ get_header(); ?>
 			<div class="hero__text-wrapper">
 				<div class="hero__lead">Hi,<br>I'm Russ ✌</div>
 				<div class="hero__subheader">I interview entrepreneurs and designers about business and products. </div>
-				<div class="hero__subscribe js-subscribe js-hero-sub-event">Get new interviews every week</div>
+				<div class="hero__subscribe js-subscribe js-hero-sub-event">Get new interviews in your inbox</div>
 			</div>
 		</section>
 
