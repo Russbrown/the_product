@@ -37,10 +37,10 @@
 	<header id="masthead" class="header" role="banner">		
 		<div class="header__wrapper">
 			<?php if ( is_front_page() && is_home() ) : ?>
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><div class="header__logo"></div></a>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><div class="header__logo fa fa-industry"></div></a>
 				<h1 class="header__title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php else : ?>
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><div class="header__logo"></div></a>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><div class="header__logo fa fa-industry"></div></a>
 				<h1 class="header__title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php endif; ?>
 			<nav class="nav__wrapper">

@@ -16,7 +16,14 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main blog-index" role="main">
 
-		<section class="hero cf">
+		<section>
+		<div class="hero__text-wrapper">
+				<div class="hero__subheader">Makers, doers and designers from the North of England.</div>
+				<div class="hero__subscribe js-subscribe js-hero-sub-event">Get new interviews in your inbox</div>
+			</div>
+		</section>
+
+		<!-- <section class="hero cf">
 			<div class="hero__img-wrapper">
 				<div class="hero__img"></div>
 			</div>
@@ -25,7 +32,7 @@ get_header(); ?>
 				<div class="hero__subheader">I interview entrepreneurs and designers about business and products. </div>
 				<div class="hero__subscribe js-subscribe js-hero-sub-event">Get new interviews in your inbox</div>
 			</div>
-		</section>
+		</section> -->
 
 		<section class="home-article__wrapper cf">
 

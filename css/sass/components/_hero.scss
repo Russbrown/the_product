@@ -28,13 +28,10 @@
     }
 
     &__text-wrapper {
-        float: right;
-        width: 65.5%;
-        padding-right: 3rem;
-        @media screen and (max-width: 700px) {
             width: 100%;
-            padding: 0 1rem;
-        }
+            padding: 1rem;
+            margin: 1.5rem auto 0;
+            text-align: center;
     }
 
     &__lead {
@@ -53,7 +50,7 @@
     }
 
     &__subscribe {
-        margin-top: 1rem;
+        margin: 1rem;
         font-family: $type-reg;
         color: $text-light;
         font-size: 1.25rem;  
