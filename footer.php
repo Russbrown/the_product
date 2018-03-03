@@ -75,5 +75,17 @@
   return t;
 }(document, "script", "twitter-wjs"));</script>
 
+<!--  User Report Script -->
+
+<script type="text/javascript">
+window._urq = window._urq || [];
+_urq.push(['initSite', '21611d58-b224-4b34-a7b9-71fb5bfdcaff']);
+(function() {
+var ur = document.createElement('script'); ur.type = 'text/javascript'; ur.async = true;
+ur.src = ('https:' == document.location.protocol ? 'https://cdn.userreport.com/userreport.js' : 'http://cdn.userreport.com/userreport.js');
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ur, s);
+})();
+</script>
+
 </body>
 </html>
